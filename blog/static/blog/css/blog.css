@@ -1,0 +1,112 @@
+@import url("base.css");
+
+
+#id_hts_run {
+  width: 200px;
+}
+
+
+
+
+
+
+h2 {
+  margin-left:25px;
+}
+
+
+.searchmark {
+  font-size: 85%;
+  background-color: inherit;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  border-collapse: collapse;
+}
+
+table.sample {
+  font-family:arial;
+  background-color: #e6f2ff;
+  margin: 10px 5pt 15px;
+  font-size: 10pt;
+  text-align: center;
+}
+
+table.sample tr:nth-of-type(even) {
+    background-color: white;
+}
+
+
+
+table.sampledisplay {
+  font-family:arial;
+  background-color: #FDFEFE;
+  margin: 10px 5pt 15px;
+  font-size: 10pt;
+  text-align: center;
+}
+
+table.sampledisplay tr:nth-of-type(even) {
+    background-color: white;
+}
+
+.whitesamrow {
+  background: #F0F0F0;
+}
+
+
+table.patient {
+  font-family:arial;
+  background-color: #e6f2ff;
+  margin: 10px 5pt 15px;
+  font-size: 10pt;
+  text-align: left;
+
+}
+
+table.patient tr:nth-of-type(odd) {
+    background-color: #F0F0F0;
+}
+
+table.cvg {
+  font-family:arial;
+  background-color: #e6f2ff;
+  margin: 10px 5pt 15px;
+  font-size: 10pt;
+  text-align: left;
+}
+
+table.cvg tr:nth-of-type(odd) {
+    background-color: #F0F0F0;
+}
+
+table.reported {
+  font-family:arial;
+  background-color: #e6EEEE;
+  margin: 10px 5pt 15px;
+  font-size: 10pt;
+  text-align: left;
+}
+
+
+
+.changeannotation {
+  background-color: white;
+}
+
+
+
+
+#reportcontent {
+	padding: 20px 10px 40px 40px;
+  border: solid 2px #C70039;
+  background: linear-gradient(#FFFFFF,#FFFFFF);
+	text-align: left;
+
+}

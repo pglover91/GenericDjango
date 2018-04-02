@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+{% load staticfiles %}
+<head>
+
+<link rel="stylesheet" type="text/css" href='{% static "blog/css/blog.css" %}' />
+</head>
+
+
+
+<title>Sign Up</title>
+
+
+<div id='nav-bar'>
+  <a id='nav-bar-btn' href="/">Blog application</a>
+</div>
+
+<div id="title">
+  <h2>You have requested access for username: "{{user}}".</h2>
+</div>
+
+
+<div id='wrapper'>
+<div id='content'>
+
+
+<h5>
+<a href="{% url 'login' %}">Click here to go back to the log in page.</a>
+</h5>
+
+<br><br>
+
+
+</div></div>
+
+
+<br>
+
+</body>
+
+</html>

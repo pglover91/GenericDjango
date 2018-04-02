@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+{% load staticfiles %}
+<head>
+
+<link rel="stylesheet" type="text/css" href='{% static "blog/css/blog.css" %}' />
+</head>
+
+{% if user.is_authenticated %}
+
+  <div id='nav-bar'>
+    <a id='nav-bar-clicked' href="/">Home</a>
+    <a id='nav-bar-btn' href="/blog/">blog</a>
+    <a id='nav-bar-user' >{{user}}</a>
+    <a id='navlogout' href="/logout/">Log out</a>
+  </div>
+
+  <div id="title">
+    <h2>Blogs</h2>
+  </div>
+
+  <br><br><br><br>
+
+
+
+
+
+  <div id='footer'>
+   <a>Generic blog application</a>
+  </div>
+
+
+{% else %}
+
+    <div id='nav-bar'>
+      <a id='nav-bar-btn' href="/">Blog</a>
+    </div>
+
+    <div id="title">
+      <h2>Log in to Blog application:</h2>
+    </div>
+
+
+
+
+	{% if form.errors %}
+
+
+	   <h1 style='font-size: 90%;'>Your username and password didn't match. Please try again.</h1>
+     <h1 style='font-style: italic; font-size: 80%;'>(If you recently requested access your username may not have been activated yet.)</h1>
+
+
+	{% endif %}
+
+
+  <br>
+	<form method="post" action="" autocomplete="off">
+  {% csrf_token %}
+
+	<table class='login' width='300'>
+	<tr>
+	    <td width='120' class='loginrow'>{{ form.username.label_tag }}</td>
+	    <td width='180' class='loginrow'>{{ form.username }}</td>
+
+	</tr>
+	<tr>
+	    <td width='120' class='loginrow'>{{ form.password.label_tag }}</td>
+	    <td width='180' class='loginrow'>{{ form.password }}</td>
+
+	</tr>
+	</table>
+
+	<br>
+
+	<input class="input_button2"  type="submit" value="Login" />
+  <input type="hidden" name="next" value="/" />
+
+	</form>
+
+	<br>
+
+  <a href="/signup/">Request access to Blog application</a>
+
+  <br>
+
+
+
+{% endif %}
+
+
+
+</body>
+
+</html>

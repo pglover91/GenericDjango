@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+<head>
+
+<link rel="stylesheet" type="text/css" href='{% static "blog/css/blog.css" %}' />
+</head>
+
+
+<div id='nav-bar'>
+  <a id='nav-bar-btn' href="/">Blog applciation</a>
+</div>
+
+<div id="title">
+  <h2>Sign up to Blog application:</h2>
+</div>
+
+
+<div id='wrapper'>
+<div id='content'>
+
+
+    {% if invalid %}
+    <p style="color: red">{{invalid}}</p>
+    {% else %}<br>{% endif %}
+
+
+
+    <legend id='upload-title' >Sign up:
+    <a class="DivToggler" id="signup">
+    <div class='signup'>
+    {% crispy signupform signupform.helper %}
+    <br><legend id='upload-title' style="margin-left:-15px;"></legend><br>
+    </div>
+
+
+
+    <h5> <a href='/'>Click here to go back to log in page</a> </h5>
+    <br>
+
+
+
+</body>
+
+</html>

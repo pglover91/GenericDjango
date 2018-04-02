@@ -1,0 +1,112 @@
+@import url("base.css");
+
+
+#upload-title {
+  font-size: 18px;
+  display: inline-block;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+
+#machine-btn {
+  margin-left: -20px;
+}
+
+#panel-box {
+  /*padding: 10px 10px 10px 10px;*/
+  margin-left: 20px;
+}
+
+.panel {
+  display:none;
+  margin-left:15px;
+  color: #202020;
+}
+
+.run {
+  display:none;
+  margin-left:15px;
+  color: #202020;
+}
+
+.search-row {
+  display:inline-block;
+  /*width: 80px;*/
+}
+
+.numberinput {
+  width: 80px;
+}
+
+#id_meta {
+  width: 80px;
+}
+
+.tog-btn {
+  padding: 2px 5px;
+  margin-top: 0px;
+  margin-left: 0px;
+  color: #003399;
+  border-radius: 6px;
+  background-color:	#3ECAE8;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tog-btn:hover {
+  opacity: 1
+}
+
+.upload-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+  color: white;
+  border-radius: 8px;
+  background-color: #f44336;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  opacity: 1
+}
+
+.search-form-label {
+  font-size: 95%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+
+}
+
+.search-form-field {
+  margin: 40px;
+}
+
+.file-list {
+  font-size: 15px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.asteriskField {
+    display: none;
+}
+
+.controls {
+  color: black;
+}
+
+.control-group {
+  color: black;
+}
+
+
+
+/*input[type=file] {
+  background: red;
+}*/
